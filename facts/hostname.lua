@@ -1,0 +1,5 @@
+facter.add("hostname", function ()
+  f = io.popen("hostname -s")
+  lines = f:lines()
+  return lines()
+end)

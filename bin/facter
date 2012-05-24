@@ -1,3 +1,5 @@
 #!/usr/bin/env lua
 
-print("welcome to facter")
+require("facter/application")
+
+facter.application.run()

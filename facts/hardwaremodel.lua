@@ -1,0 +1,5 @@
+facter.add("hardwaremodel", function ()
+  f = io.popen("uname -m")
+  lines = f:lines()
+  return lines()
+end)

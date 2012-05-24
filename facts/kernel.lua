@@ -1,0 +1,5 @@
+facter.add("kernel", function ()
+  f = io.popen("uname -s")
+  lines = f:lines()
+  return lines()
+end)

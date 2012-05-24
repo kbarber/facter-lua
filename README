@@ -1,0 +1,5 @@
+Use:
+
+  LUA_PATH=./lib/?.lua bin/facter
+
+To test.
